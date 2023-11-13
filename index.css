@@ -1,5 +1,6 @@
 body{
-    background-image: url(concrete_seamless.png);
+    background-image: url("./image/concrete_seamless.png");
+    
 }
 /*Header*/
 .title{
