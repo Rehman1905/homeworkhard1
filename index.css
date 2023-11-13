@@ -20,7 +20,7 @@ nav{
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    border-bottom:2px solid rgba(120, 120, 120,0.6);
+    border-bottom:2px solid #ddd;
     z-index: 99;
 }
 a{
@@ -35,8 +35,10 @@ a{
     margin-top: 35px;
     margin-right: 200px;
 }
-.li{
-    border-right: 1px solid rgba(120, 120, 120,0.2); 
+.li:not(:last-child)::after{
+    content: " | ";
+    font-size: 24px;
+    color: #efefef;
 }
 /*Main*/
 .section1{
@@ -147,7 +149,7 @@ main{
 .connect{
     color: #4aaaa5;
     font-size: 25px;
-    border-bottom: 2px solid rgba(120, 120, 120,0.2);
+    border-bottom: 2px solid #ddd;
     width: 200px;
     margin: 10px;
     padding: 20px;
