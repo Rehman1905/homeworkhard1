@@ -34,11 +34,14 @@ a{
     justify-content: space-between;
     margin-top: 35px;
     margin-right: 200px;
+    position: relative;
 }
-.li:not(:last-child)::after{
-    content: " | ";
-    font-size: 24px;
-    color: #efefef;
+.li::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    border-right:1px solid #efefef ;
+    height: 13px;
 }
 /*Main*/
 .section1{
